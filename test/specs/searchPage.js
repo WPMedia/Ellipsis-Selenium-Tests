@@ -3,12 +3,18 @@
 
 describe('Search Page', ()=> {
 
-    it('should have the right title - the fancy generator way', ()=> {
+    it('Title should be Ellipsis', ()=> {
         browser
           .url('http://192.168.99.100/#!/search')
           .getTitle().should.be.equal('Ellipsis')
-    });
-    
+    });search-results
+
+    // it('Search Results should load on page load', ()=> {
+    //     browser
+    //       .url('http://192.168.99.100/#!/search')
+    //       .getTitle().should.be.equal('Ellipsis')
+    // });
+
     // it('should have the right title - the fancy generator way', ()=> {
     //     browser.url('http://192.168.99.100/#!/search')
     //       .setValue('#orb-search-q', ['surfing'], function(){}) // find the element and enter the query
