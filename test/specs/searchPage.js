@@ -7,13 +7,15 @@ describe('Search Page', ()=> {
         browser
           .url('http://192.168.99.100/#!/search')
           .getTitle().should.be.equal('Ellipsis')
-    });search-results
+    });
 
-    // it('Search Results should load on page load', ()=> {
-    //     browser
-    //       .url('http://192.168.99.100/#!/search')
-    //       .getTitle().should.be.equal('Ellipsis')
-    // });
+    it('Search Results should load on page load', ()=> {
+        browser.url('http://192.168.99.100/#!/search')
+               .waitForExist('#search-results')
+
+        //let children = $('.row.well')
+        console.log('test')
+    });
 
     // it('should have the right title - the fancy generator way', ()=> {
     //     browser.url('http://192.168.99.100/#!/search')
